@@ -1,5 +1,6 @@
 {
   "name": "seeddeck",
+  "productName": "SeedDeck",
   "version": "1.1.1",
   "description": "A polished desktop torrent search, magnet import, download, and seeding workspace.",
   "author": "SeedDeck contributors",

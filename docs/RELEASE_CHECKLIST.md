@@ -68,5 +68,5 @@ release/SeedDeck-1.1.1-win-x64.zip
 - [x] README 已加入原项目链接：https://github.com/baairon/torlink
 - [x] GitHub 新仓库创建后，补充 `package.json` 的 `repository`、`bugs` 和 `homepage`。
 - [x] 按 `docs/PUBLISHING.md` 绑定远程仓库、推送源码并创建 tag。
-- [ ] 在 GitHub Release 上传 `release/SeedDeck-1.1.1-win-x64.zip`，不要把 `release/` 提交进仓库。
+- [x] 在 GitHub Release 上传 `release/SeedDeck-1.1.1-win-x64.zip`，不要把 `release/` 提交进仓库。
 - [x] `docs/RELEASE_NOTES_v1.1.1.md` 已准备好，可作为 GitHub Release notes。

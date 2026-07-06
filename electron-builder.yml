@@ -1,0 +1,37 @@
+appId: dev.seeddeck.desktop
+productName: SeedDeck
+electronDist: node_modules/electron/dist
+directories:
+  output: release
+  buildResources: build
+artifactName: ${productName}-${version}-${os}-${arch}.${ext}
+files:
+  - dist-desktop/**/*
+  - package.json
+extraResources:
+  - from: build/icon.png
+    to: icon.png
+asar: true
+npmRebuild: false
+asarUnpack:
+  - "**/*.node"
+  - node_modules/node-datachannel/**/*
+extraMetadata:
+  main: dist-desktop/main/index.js
+  name: seeddeck
+  productName: SeedDeck
+protocols:
+  - name: Magnet URI
+    schemes:
+      - magnet
+fileAssociations:
+  - ext: torrent
+    name: Torrent file
+    description: BitTorrent metadata file
+win:
+  executableName: SeedDeck
+  icon: build/icon.ico
+  target:
+    - target: zip
+      arch:
+        - x64

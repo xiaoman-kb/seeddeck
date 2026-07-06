@@ -1,0 +1,87 @@
+{
+  "name": "seeddeck",
+  "version": "1.1.1",
+  "description": "A polished desktop torrent search, magnet import, download, and seeding workspace.",
+  "author": "SeedDeck contributors",
+  "type": "module",
+  "bin": {
+    "seeddeck": "./dist/cli.cjs"
+  },
+  "files": [
+    "dist",
+    "preview"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "tsx src/index.tsx",
+    "build": "tsup",
+    "postbuild": "node scripts/postbuild.cjs",
+    "start": "node dist/index.js",
+    "desktop:dev": "npm run desktop:build:main && node scripts/desktop-dev.cjs",
+    "desktop:dev:renderer": "vite --config vite.desktop.config.ts",
+    "desktop:build": "npm run desktop:build:main && npm run desktop:build:renderer",
+    "desktop:build:main": "tsup --config tsup.desktop.config.ts",
+    "desktop:build:renderer": "vite build --config vite.desktop.config.ts",
+    "desktop:start": "npm run desktop:build && node scripts/desktop-start.cjs",
+    "desktop:pack": "npm run desktop:build && electron-builder --dir --config electron-builder.yml",
+    "desktop:dist": "npm run desktop:build && electron-builder --config electron-builder.yml",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "verify:seeding": "tsx scripts/verify-seeding.ts",
+    "previews": "tsx scripts/render-previews.tsx",
+    "desktop:previews": "electron scripts/render-desktop-previews.cjs",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "torrent",
+    "bittorrent",
+    "torrent-client",
+    "torrent-search",
+    "download-manager",
+    "downloader",
+    "magnet",
+    "magnet-links",
+    "p2p",
+    "webtorrent",
+    "seeding",
+    "desktop",
+    "desktop-app",
+    "desktop-downloader",
+    "electron",
+    "windows",
+    "rss",
+    "rss-search",
+    "source-health",
+    "zero-configuration",
+    "zero-setup"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "env-paths": "^4.0.0",
+    "ink": "^7.0.5",
+    "lucide-react": "^0.468.0",
+    "parse-torrent": "^11.0.21",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "webtorrent": "^2.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.2",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.2",
+    "electron": "^39.2.7",
+    "electron-builder": "^26.15.3",
+    "ink-testing-library": "^4.0.0",
+    "tsup": "^8.5.1",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3",
+    "vite": "^7.3.0",
+    "vitest": "^4.1.8"
+  }
+}

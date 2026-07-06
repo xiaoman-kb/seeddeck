@@ -58,6 +58,14 @@
     "zero-setup"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaoman-kb/seeddeck.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xiaoman-kb/seeddeck/issues"
+  },
+  "homepage": "https://github.com/xiaoman-kb/seeddeck#readme",
   "publishConfig": {
     "access": "public"
   },

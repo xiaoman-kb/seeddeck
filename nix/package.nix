@@ -10,7 +10,7 @@
 
 buildNpmPackage (finalAttrs: {
   pname = "seeddeck";
-  version = "1.1.1-unstable";
+  version = "1.1.1";
   __structedAttrs = true;
   strictDeps = true;
 
@@ -48,7 +48,7 @@ buildNpmPackage (finalAttrs: {
 
   meta = {
     description = "Desktop and terminal torrent search/download client.";
-    homepage = "https://github.com/<your-name>/seeddeck";
+    homepage = "https://github.com/xiaoman-kb/seeddeck";
     license = lib.licenses.mit;
     maintainers = [ ];
     mainProgram = "seeddeck";

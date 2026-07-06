@@ -23,12 +23,12 @@ After the GitHub repository exists, update `package.json` with the real URL:
 {
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/<owner>/seeddeck.git"
+    "url": "git+https://github.com/xiaoman-kb/seeddeck.git"
   },
   "bugs": {
-    "url": "https://github.com/<owner>/seeddeck/issues"
+    "url": "https://github.com/xiaoman-kb/seeddeck/issues"
   },
-  "homepage": "https://github.com/<owner>/seeddeck#readme"
+  "homepage": "https://github.com/xiaoman-kb/seeddeck#readme"
 }
 ```
 
@@ -42,14 +42,14 @@ git commit -m "chore: add repository metadata"
 ## 3. Push Source
 
 ```sh
-git remote add origin https://github.com/<owner>/seeddeck.git
+git remote add origin https://github.com/xiaoman-kb/seeddeck.git
 git push -u origin main
 ```
 
 If the remote already exists:
 
 ```sh
-git remote set-url origin https://github.com/<owner>/seeddeck.git
+git remote set-url origin https://github.com/xiaoman-kb/seeddeck.git
 git push -u origin main
 ```
 

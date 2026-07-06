@@ -66,7 +66,7 @@ release/SeedDeck-1.1.1-win-x64.zip
 - [x] `node_modules/`、`dist/`、`dist-desktop/`、`release/`、日志和缓存没有被 Git 跟踪。
 - [x] README 中的版本号和 release 文件名与 `package.json` 一致。
 - [x] README 已加入原项目链接：https://github.com/baairon/torlink
-- [ ] GitHub 新仓库创建后，补充 `package.json` 的 `repository`、`bugs` 和 `homepage`。
-- [ ] 按 `docs/PUBLISHING.md` 绑定远程仓库、推送源码并创建 tag。
+- [x] GitHub 新仓库创建后，补充 `package.json` 的 `repository`、`bugs` 和 `homepage`。
+- [x] 按 `docs/PUBLISHING.md` 绑定远程仓库、推送源码并创建 tag。
 - [ ] 在 GitHub Release 上传 `release/SeedDeck-1.1.1-win-x64.zip`，不要把 `release/` 提交进仓库。
-- [ ] 使用 `docs/RELEASE_NOTES_v1.1.1.md` 作为 Release notes，并根据最终仓库地址微调。
+- [x] `docs/RELEASE_NOTES_v1.1.1.md` 已准备好，可作为 GitHub Release notes。
